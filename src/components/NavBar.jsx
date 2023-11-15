@@ -2,6 +2,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography } from '@mui/material';
 import styled from '@emotion/styled';
+import '../styles/nav.css'
 
 const StyledAppBar = styled(AppBar)`
   background-color: ${({ theme }) => theme.palette.primary.main};
@@ -18,7 +19,10 @@ const StyledLink = styled(Typography)`
     selected ? theme.palette.text.secondary : theme.palette.text.primary};
   margin-right: 20px;
   font-weight: bold;
+  font-size: 1.2rem;
   cursor: pointer;
+  transition: color 0.3s ease-in-out;
+
   &:hover {
     color: ${({ theme }) => theme.palette.text.secondary};
   }
@@ -38,8 +42,10 @@ const NavBar = ({ sections }) => {
   return (
     <StyledAppBar position="static">
       <StyledToolbar>
-        <Typography variant="h6">Photographer's Portfolio</Typography>
-        <div>
+        <Typography variant="h6" style={{ cursor: 'pointer' }}>
+          Photographer's Portfolio
+        </Typography>
+        <div className='nav-links'>
           {sections.map((section) => (
             <StyledLink
               key={section.id}
