@@ -7,9 +7,7 @@ const Gallery = ({ scrollPosition }) => {
   // Example image paths
 
   return (
-    <div className="gallery-container">
-      <h2>Gallery</h2>
-
+    <div className="gallery-container mt-2">
       <div className="image-grid">
         {imagePaths2.map((path, index) => (
   <LazyLoadImage

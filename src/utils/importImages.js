@@ -45,17 +45,32 @@ import image_21Two from '../Images/instaImages2/image_21.jpg';
 import image_8Two from '../Images/instaImages2/image_8.jpg';
 import uziTwo from '../Images/instaImages2/uzi.jpg';
 
-const imagePaths2 = [DNDTwo, iceSpiceTwo, image_11Two, image_14Two, image_20Two, image_5Two, taylorTwo, concertTwo, image_10Two, image_12Two, image_17Two, image_21Two, image_8Two, uziTwo];
+const imagePaths2 = [
+    iceSpiceTwo,
+    concertTwo,
+    taylorTwo,
+    image_20Two,
+    DNDTwo,
+    uziTwo,
+    image_10Two,
+    image_14Two,
+    image_11Two,
+    image_12Two,
+     image_17Two,
+     image_21Two,
+     image_44,
+    ];
 
-const imagePaths = [
+    const imagePaths = [
+        image_8Two,
+        image_19,
+        image_24,
+    image_29,
+    image_33,
+    image_39,
+    image_5,
+    image_12,
     image_10,
-image_19,
-image_24,
-image_29,
-image_33,
-image_39,
-image_5,
-image_12,
 image_20,
 image_25,
 image_3,
@@ -79,7 +94,6 @@ image_23,
 image_28,
 image_32,
 image_38,
-image_44
 ]
 
 export { imagePaths, imagePaths2}

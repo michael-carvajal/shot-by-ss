@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import NavBar from './NavBar';
-import Home from './Home'; // Create for other sections
 import Gallery from './Gallery';
 import About from './About';
 import Contact from './Contact';
@@ -16,7 +15,6 @@ const MainComponent = () => {
 
 
   const sections = [
-    { id: 'home', label: 'Home' },
     { id: 'gallery', label: 'Gallery', ref: galleryRef },
     { id: 'about', label: 'About', ref: aboutRef },
     { id: 'contact', label: 'Contact', ref: contactRef },
@@ -25,9 +23,6 @@ const MainComponent = () => {
   return (
         <div>
             <NavBar sections={sections} />
-            <div id="home">
-              <Home />
-            </div>
             <div id="gallery" ref={galleryRef}>
               <Gallery />
             </div>

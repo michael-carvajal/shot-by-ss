@@ -3,6 +3,7 @@ import React from 'react';
 import { AppBar, Toolbar, Typography } from '@mui/material';
 import styled from '@emotion/styled';
 import '../styles/nav.css'
+import { Link } from 'react-router-dom';
 
 const StyledAppBar = styled(AppBar)`
   background-color: ${({ theme }) => theme.palette.primary.main};
@@ -43,7 +44,7 @@ const NavBar = ({ sections }) => {
     <StyledAppBar position="static">
       <StyledToolbar>
         <Typography variant="h6" style={{ cursor: 'pointer' }}>
-          Photographer's Portfolio
+          <Link to='/'>Shot By SS</Link>
         </Typography>
         <div className='nav-links'>
           {sections.map((section) => (
