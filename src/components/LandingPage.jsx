@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom'
 import Button from '@mui/material/Button';
 import taylor from '../Images/instaImages2/taylor.jpg'
 import DND from  '../Images/instaImages2/DND.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const LandingPage = () => {
   return (
 <div className='flex w-screen h-screen'>
-      <div className='flex-grow h-full'>
-        <img src={DND} className=' w-full h-full object-cover'></img>
+      <div className=' flex-grow h-full w-2/3 overflow-hidden'>
+        <LazyLoadImage src={DND} width='100%' height='100%' className='w-full h-full object-cover' effect='blur'/>
   </div>
   <div className=' w-1/3'>
     <div className='flex flex-col justify-around h-screen items-center '>
