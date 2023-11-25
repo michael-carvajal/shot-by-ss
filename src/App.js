@@ -21,7 +21,7 @@ const App = () => {
 
           <Route path='/' element={<LandingPage />} />
           <Route path='/home' element={<MainComponent />} />
-
+          
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
