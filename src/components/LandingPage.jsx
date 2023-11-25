@@ -7,10 +7,10 @@ import DND from  '../Images/instaImages2/DND.jpg'
 const LandingPage = () => {
   return (
 <div className='flex w-screen h-screen'>
-      <div className='border-4 border-red-50 flex-grow h-full'>
-        <img src={DND} className=' '></img>
+      <div className='flex-grow h-full'>
+        <img src={DND} className=' w-full h-full object-cover'></img>
   </div>
-  <div className='border-4 border-red-50 w-1/3'>
+  <div className=' w-1/3'>
     <div className='flex flex-col justify-around h-screen items-center '>
       <h2>Shot By SS</h2>
           <Button component={Link} to="/home"
@@ -18,7 +18,7 @@ const LandingPage = () => {
           >
       Gallery
     </Button>
-      <footer className="flex flex-col items-center bg-neutral-200 text-center text-white dark:bg-neutral-600 border rounded-lg shadow">
+      <footer className="flex flex-col items-center bg-neutral-200 text-center text-white dark:bg-neutral-600  rounded-lg shadow">
   <div className="container pt-9">
     <div className="mb-9 flex justify-center">
       <a
