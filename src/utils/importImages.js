@@ -30,6 +30,22 @@ import image_28 from   '../Images/instaImages/image_28.jpg'
 import image_32 from   '../Images/instaImages/image_32.jpg'
 import image_38 from   '../Images/instaImages/image_38.jpg'
 import image_44 from   '../Images/instaImages/image_44.jpg'
+import DNDTwo from '../Images/instaImages2/DND.jpg';
+import iceSpiceTwo from '../Images/instaImages2/iceSpice.jpg';
+import image_11Two from '../Images/instaImages2/image_11.jpg';
+import image_14Two from '../Images/instaImages2/image_14.jpg';
+import image_20Two from '../Images/instaImages2/image_20.jpg';
+import image_5Two from '../Images/instaImages2/image_5.jpg';
+import taylorTwo from '../Images/instaImages2/taylor.jpg';
+import concertTwo from '../Images/instaImages2/concert.jpg';
+import image_10Two from '../Images/instaImages2/image_10.jpg';
+import image_12Two from '../Images/instaImages2/image_12.jpg';
+import image_17Two from '../Images/instaImages2/image_17.jpg';
+import image_21Two from '../Images/instaImages2/image_21.jpg';
+import image_8Two from '../Images/instaImages2/image_8.jpg';
+import uziTwo from '../Images/instaImages2/uzi.jpg';
+
+const imagePaths2 = [DNDTwo, iceSpiceTwo, image_11Two, image_14Two, image_20Two, image_5Two, taylorTwo, concertTwo, image_10Two, image_12Two, image_17Two, image_21Two, image_8Two, uziTwo];
 
 const imagePaths = [
     image_10,
@@ -66,4 +82,4 @@ image_38,
 image_44
 ]
 
-export { imagePaths}
+export { imagePaths, imagePaths2}
