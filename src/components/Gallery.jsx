@@ -1,23 +1,23 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage, trackWindowScroll } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import  {imagePaths}  from '../utils/importImages';
-const Gallery = () => {
+import { imagePaths } from '../utils/importImages';
+
+const Gallery = ({ scrollPosition }) => {
   // Example image paths
-
-
 
   return (
     <div className="gallery-container">
       <h2>Gallery</h2>
       <LazyLoadImage
-            src={''}
-            alt={`Image sdv`}
-            width="100%"
-            height="100%"
-            className="gallery-image"
-            effect="blur"
-          />
+        src={''}
+        alt={`Image sdv`}
+        width="100%"
+        height="100%"
+        className="gallery-image"
+        effect="blur"
+        scrollPosition={scrollPosition}
+      />
       <div className="image-grid">
         {imagePaths.map((path, index) => (
           <LazyLoadImage
@@ -28,6 +28,8 @@ const Gallery = () => {
             height="100%"
             className="gallery-image"
             effect="blur"
+            scrollPosition={scrollPosition}
+            threshold={25} // Adjust the threshold as needed
           />
         ))}
       </div>
@@ -35,4 +37,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default trackWindowScroll(Gallery);
