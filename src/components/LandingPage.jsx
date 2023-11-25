@@ -1,17 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Button from '@mui/material/Button';
-
+import taylor from '../Images/instaImages2/taylor.jpg'
+import DND from  '../Images/instaImages2/DND.jpg'
 
 const LandingPage = () => {
   return (
 <div className='flex w-screen h-screen'>
-  <div className='border-4 border-red-50 flex-grow'>left</div>
+      <div className='border-4 border-red-50 flex-grow h-full'>
+        <img src={DND} className=' '></img>
+  </div>
   <div className='border-4 border-red-50 w-1/3'>
     <div className='flex flex-col justify-around h-screen items-center '>
       <h2>Shot By SS</h2>
           <Button component={Link} to="/home"
-          sx={{ backgroundColor: 'rgb(229 229 229 )', color: 'light-gray' }}
+          sx={{ backgroundColor: 'rgb(229 229 229 )', color: 'light-gray',  }}
           >
       Gallery
     </Button>
