@@ -35,7 +35,30 @@ const MainComponent = () => {
             <div id="social-media" ref={socialMediaRef}>
               <SocialMedia />
       </div>
-      <ScrollToTop smooth color='white' component={<Arrow />}  className='!fixed bottom-5 right-5 rounded-full bg-red-600 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg'/>
+      <ScrollToTop
+  smooth
+  color='white'
+  component={<Arrow style={{ height: '75%' }} />}
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+    position: 'fixed',
+    bottom: '25px',
+    right: '25px',
+    borderRadius: '25%',
+    backgroundColor: '#FF4500',  // Use your preferred orange color
+    padding: '8px',
+    fontSize: '12px',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    color: 'white',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+    transition: 'background-color 0.3s, box-shadow 0.3s',
+  }}
+  // other props...
+/>
+
           </div>
   )
 }
