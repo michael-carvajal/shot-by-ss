@@ -5,7 +5,7 @@ import taylor from '../Images/instaImages2/taylor.jpg'
 import DND from  '../Images/instaImages2/DND.jpg'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
+import '../styles/Button.css'
 const LandingPage = () => {
   return (
 <div className='flex w-screen h-screen'>
@@ -15,11 +15,9 @@ const LandingPage = () => {
   <div className=' w-1/3'>
     <div className='flex flex-col justify-around h-screen items-center '>
       <h2 className='logoText text-neutral-400 text-4xl'>Shot By SS</h2>
-          <Button component={Link} to="/home"
-          sx={{ backgroundColor: 'rgb(229 229 229 )', color: 'light-gray',  }}
-          >
-      Gallery
-    </Button>
+          <Link to={`/home`} className='linkTag'>
+            <span className="gradient-text">Gallery</span>
+      </Link>
       <footer className="flex flex-col items-center bg-neutral-200 text-center text-white dark:bg-neutral-600  rounded-lg shadow">
   <div className="container pt-9">
     <div className="mb-9 flex justify-center">
