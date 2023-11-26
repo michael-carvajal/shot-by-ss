@@ -1,3 +1,7 @@
 .nav-links{
     display: flex;
 }
+
+.logoText {
+    font-family: 'DM Serif Display', serif;
+}

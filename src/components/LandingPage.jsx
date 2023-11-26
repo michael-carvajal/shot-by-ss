@@ -14,7 +14,7 @@ const LandingPage = () => {
   </div>
   <div className=' w-1/3'>
     <div className='flex flex-col justify-around h-screen items-center '>
-      <h2>Shot By SS</h2>
+      <h2 className='logoText text-neutral-400 text-4xl'>Shot By SS</h2>
           <Button component={Link} to="/home"
           sx={{ backgroundColor: 'rgb(229 229 229 )', color: 'light-gray',  }}
           >

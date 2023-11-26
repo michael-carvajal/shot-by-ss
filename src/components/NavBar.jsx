@@ -19,11 +19,10 @@ const StyledLink = styled(Typography)`
   color: ${({ theme, selected }) =>
     selected ? theme.palette.text.secondary : theme.palette.text.primary};
   margin-right: 20px;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
-
+  font-family: 'DM Serif Display', serif;
   &:hover {
     color: ${({ theme }) => theme.palette.text.secondary};
   }
@@ -44,7 +43,7 @@ const NavBar = ({ sections }) => {
     <StyledAppBar position="static">
       <StyledToolbar>
         <Typography variant="h6" style={{ cursor: 'pointer' }}>
-          <Link to='/'>Shot By SS</Link>
+          <Link to='/' className='logoText text-2xl bold'>Shot By SS</Link>
         </Typography>
         <div className='nav-links'>
           {sections.map((section) => (
