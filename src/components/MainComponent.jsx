@@ -16,7 +16,6 @@ const MainComponent = () => {
 
   const sections = [
     { id: 'gallery', label: 'Gallery', ref: galleryRef },
-    { id: 'about', label: 'About', ref: aboutRef },
     { id: 'contact', label: 'Contact', ref: contactRef },
     { id: 'social-media', label: 'Social Media', ref: socialMediaRef },
   ];
@@ -26,9 +25,9 @@ const MainComponent = () => {
             <div id="gallery" ref={galleryRef}>
               <Gallery />
             </div>
-            <div id="about" ref={aboutRef}>
+            {/* <div id="about" ref={aboutRef}>
               <About />
-            </div>
+            </div> */}
             <div id="contact" ref={contactRef}>
               <Contact />
             </div>
