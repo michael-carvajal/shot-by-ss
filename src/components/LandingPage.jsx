@@ -14,8 +14,8 @@ const LandingPage = () => {
   </div>
   <div className=' w-1/3'>
     <div className='flex flex-col justify-around h-screen items-center '>
-      <h2 className='logoText text-neutral-400 text-4xl'>Shot By SS</h2>
-      <Link to={`/home`} className='linkTag'>
+      <h2 className='logoText text-neutral-400 text-2xl md:text-4xl'>Shot By SS</h2>
+      <Link to={`/home`} className='linkTag text-xs md:text-lg'>
         <span className="gradient-text">Gallery</span>
       </Link>
       <footer className="flex justify-center items-center bg-neutral-200  text-white dark:bg-neutral-600  rounded-lg shadow">
